@@ -4,7 +4,8 @@
 #### import
 
 ```python
-  from queryones import Query, Manager, TableValue
+  from queryones import Query
+  from tablevalue import Manager, TableValue
 ```
 
 #### Usage
