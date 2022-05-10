@@ -97,7 +97,7 @@ print(result[1].get_data())
 [('chili',)]
 ```
 
-# 4. Update
+# 4. Using TableValue object in query
 ```python
 query.text = '''
     select
@@ -118,7 +118,7 @@ query.text = '''
     city 
     from first_table
     '''
-query.set_parameter('table1', table1)
+query.set_parameter('table1', table1) # table1 - TableValue object
 result = query.execute()
 for i in result.get_data(sort='name'):
     print(i)
